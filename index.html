@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>JavaScript Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body bgcolor="yellow" text="black">
+<body bgcolor="magenta" text="white">
 <center>
 <h1><u><font color="blue">JavaScript Assignment</u></h1>
 </center>
@@ -42,5 +44,27 @@ function perimeter1()
  alert("Perimeter of Rectangle="+perimeter);
 }
 </script>
-</body>
+<h1>JavaScript Program to find all the Prime numbers upto a given number.</h2>
+Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<input type="submit" value="Print Prime Numbers" onClick="findprime()" name="print" / >
+<div id="result"></div>
+<script>
+function findprime()
+{
+  var i=0;
+  var j=0;
+  limit= document.getElementById('limit').value;
+  for(i=1;i<=limit;i++){
+  var c=0;
+  for(j=1;j<=i;j++){
+  if(i % j ==0){
+  c++;
+  }
+ }
+ if ( c == 2){
+    document.getElementById("result").insertAdjacentHTML('beforeend',i+ '<br>');
+   }
+  }
+ }
+ </script>
+ </body>
 </html>
