@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hello farook</title>
+	<title>JavaScript Assignment</title>
 </head>
-<body bgcolor="magenta" text="black">
-<h1><u>Farook College. Hello</u></h1>
+<body bgcolor="yellow" text="black">
+<center>
+<h1><u><font color="blue">JavaScript Assignment</u></h1>
+</center>
+<h1><font color="red">Program to find the area and perimeter of a circle</h1>
+<br><br><input type="button" onClick="area()" value="AREA">
+<input type="button" onClick="perimter()" value="PERIMETER">
+<script>
+var a,p,radius;
+radius=parseFloat(prompt("Enter the value of length"));
+function area()
+{
+ area= Math.PI*radius*radius;
+ alert("Area of Circle="+area);
+}
+function perimeter()
+{
+ perimeter=2*Math.PI*radius;
+ alert("Perimeter of Circle="+perimeter);
+}
+</script>
 </body>
 </html>
