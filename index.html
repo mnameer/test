@@ -23,6 +23,23 @@ function perimeter()
  perimeter= 2*Math.PI*radius;
  alert("Perimeter of Circle="+perimeter);
 }
+<h1><font color="red">Program to find the area and perimeter of a Rectangle</h1>
+<br><br><input type="button" onClick="area()" value="AREA">
+<input type="button" onClick="perimeter()" value="PERIMETER">
+<script>
+var l,b,area,perimeter;
+l=prompt("Enter the value of length");
+b=prompt("Enter the value of Breadth");
+function area()
+{
+ area= l*b;
+ alert("Area of Rectangle="+area);
+}
+function perimeter()
+{
+ perimeter= 2*(l+b);
+ alert("Perimeter of Rectangle="+perimeter);
+}
 </script>
 </body>
 </html>
