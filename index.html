@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body bgcolor="#228B22">
+<body bgcolor="#00008B">
 <center>
 <h1><u><font color="white">JavaScript Assignment</u></h1>
 </center>
-<h1><font color="red">Program to find the area and perimeter of a circle</h1>
+<br><br><h1><font color="red">Program to find the area and perimeter of a circle</h1>
 <br><input type="button" onClick="area()" value="AREA" style="background-color: green; color:white; width: 100px; ">
 <input type="button" onClick="perimeter()" value="PERIMETER" style="background-color: black; color:white; width: 100px;">
 <script>
-var a,p,radius;
+var area,radius;
 function area()
 {
  radius=parseFloat(prompt("Enter the value of Radius"));
@@ -22,7 +22,7 @@ function area()
 }
 function perimeter()
 {
- radius=parseFloat(prompt("Enter the value of Radius"));
+  var radius=parseFloat(prompt("Enter the value of Radius"));
  perimeter= 2*Math.PI*radius;
  alert("Perimeter of Circle="+perimeter);
 }
