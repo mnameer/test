@@ -13,18 +13,19 @@
 <br><input type="button" onClick="area()" value="AREA" style="background-color: green; color:white; width: 100px; ">
 <input type="button" onClick="perimeter()" value="PERIMETER" style="background-color: black; color:white; width: 100px;">
 <script>
-var area,radius;
 function area()
 {
+ var area,radius;
  radius=parseFloat(prompt("Enter the value of Radius"));
  area= Math.PI*radius*radius;
  alert("Area of Circle="+area);
 }
 function perimeter()
 {
-  var radius=parseFloat(prompt("Enter the value of Radius"));
- perimeter= 2*Math.PI*radius;
- alert("Perimeter of Circle="+perimeter);
+  var radius,perimeter;
+  radius=parseFloat(prompt("Enter the value of Radius"));
+  perimeter= 2*Math.PI*radius;
+  alert("Perimeter of Circle="+perimeter);
 }
 </script>
 <br><br><h1><font color="red">Program to find the area and perimeter of a Rectangle</h1>
