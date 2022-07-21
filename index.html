@@ -47,8 +47,30 @@ function perimeter1()
  alert("Perimeter of Rectangle="+perimeter);
 }
 </script>
-<br><br><h1><mark>JavaScript Program to find all the Prime numbers upto a given number.</mark></h2></font>
+<br><br><h1><mark>JavaScript Program to find all the Prime numbers upto a given number In Ascending Order.</mark></h2></font>
 <br><font color="Orange">Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers" onClick="findprime()" name="print" style= color:green;/ >
+<br><div id="result"></div>
+<script>
+function findprime()
+{
+  var i=0;
+  var j=0;
+  limit= document.getElementById('limit').value;
+  for(i=1;i<=limit;i++){
+  var c=0;
+  for(j=1;j<=i;j++){
+  if(i % j ==0){
+  c++;
+  }
+ }
+ if ( c == 2){
+    document.getElementById("result").insertAdjacentHTML('beforeend',i+ '<br>');
+   }
+  }
+ }
+ </script>
+<br><br><h1><mark>JavaScript Program to find all the Prime numbers upto a given number In Descending Order.</mark></h2></font>
+<br><font color="Purple">Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers" onClick="findprime()" name="print" style= color:green;/ >
 <br><div id="result"></div>
 <script>
 function findprime()
