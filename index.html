@@ -48,7 +48,7 @@ function perimeter1()
 }
 </script>
 <br><br><h1><mark>JavaScript Program to find all the Prime numbers upto a given number In Ascending Order.</mark></h2></font>
-<br><font color="Orange">Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers" onClick="findprime()" name="print" style= color:green;/ >
+<br><font color="Orange">Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers In Ascending Order" onClick="findprime()" name="print" style= color:green;/ >
 <br><div id="result"></div>
 <script>
 function findprime()
@@ -70,10 +70,10 @@ function findprime()
  }
  </script>
 <br><br><h1><mark>JavaScript Program to find all the Prime numbers upto a given number In Descending Order.</mark></h2></font>
-<br><font color="Purple">Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers" onClick="findprime()" name="print" style= color:green;/ >
-<br><div id="result"></div>
+<br><font color="Purple">Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers In Descending Order " onClick="findprime2()" name="print" style= color:green;/ >
+<br><div id="result2"></div>
 <script>
-function findprime()
+function findprime2()
 {
   var i=0;
   var j=0;
@@ -86,7 +86,7 @@ function findprime()
   }
  }
  if ( c == 2){
-    document.getElementById("result").insertAdjacentHTML('afterend',i+ '<br>');
+    document.getElementById("result2").insertAdjacentHTML('afterend',i+ '<br>');
    }
   }
  }
