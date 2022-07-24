@@ -7,7 +7,7 @@
 </head>
 <body bgcolor="AliceBlue">
 <center>
-<h1 style="margin-bottom: 15px; text-align: center; font-size: 50px; font-family: Comic Sans MS, cursive, sans-serif;"><u><font color="Blue">Webpage Developed By Nameer</u></h1></font>
+<h1 style="margin-bottom: 15px; text-align: center; font-size: 50px; font-family: Comic Sans MS, cursive, sans-serif;"><font color="Blue">Webpage Developed By Nameer</h1></font>
 </center>
 <br><br><h1><font color="white"><mark>To find the area and perimeter of a circle</mark></h1>
 <br><input type="button" onClick="area()" value="AREA" style="background-color: green; color:white; width: 100px; ">
@@ -70,23 +70,23 @@ function findprime()
  }
  </script>
 <br><br><h1><mark>To find all the Prime numbers upto a given number In Descending Order.</mark></h2></font>
-<br><font color="Purple">Enter the Number:<input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers In Descending Order " onClick="findprime2()" name="print" style= color:green;/ >
+<br><font color="Purple">Enter the Number:<input type="number" name="limit2" id="limit2" min="0" style="width: 100px;" />&nbsp;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Print Prime Numbers In Descending Order " onClick="findprime2()" name="print2" style= color:green;/ >
 <br><div id="result2"></div>
 <script>
 function findprime2()
 {
-  var i=0;
-  var j=0;
-  limit= document.getElementById('limit').value;
-  for(i=1;i<=limit;i++){
-  var c=0;
-  for(j=1;j<=i;j++){
-  if(i % j ==0){
-  c++;
+  var k=0;
+  var l=0;
+  limit2= document.getElementById('limit2').value;
+  for(k=1;k<=limit;k++){
+  var m=0;
+  for(l=1;l<=k;l++){
+  if(k % l ==0){
+  m++;
   }
  }
- if ( c == 2){
-    document.getElementById("result2").insertAdjacentHTML('afterend',i+ '<br>');
+ if ( m == 2){
+    document.getElementById("result2").insertAdjacentHTML('afterend',k+ '<br>');
    }
   }
  }
