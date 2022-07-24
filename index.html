@@ -13,17 +13,18 @@
 <br><input type="button" onClick="area2()" value="CALCULATE AREA" style="background-color: green; color:white; width: 200px; ">
 <input type="button" onClick="perimeter2()" value="CALCULATE PERIMETER" style="background-color: black; color:white; width: 200px;">
 <script>
-var radius2,area2,perimeter2;
+var radiuss,areaa;
 function area2()
 {
- radius2=parseFloat(prompt("Enter the value of Radius"));
- area2= Math.PI*radius2*radius2;
- alert("Area of Circle="+area2);
+ radiuss=parseFloat(prompt("Enter the value of Radius"));
+ areaa= Math.PI*radius2*radiuss;
+ alert("Area of Circle="+areaa);
 }
 function perimeter2()
 {
-  radius2=parseFloat(prompt("Enter the value of Radius"));
-  perimeter2= 2*Math.PI*radius2;
+  var perimeter2;
+  radiuss=parseFloat(prompt("Enter the value of Radius"));
+  perimeter2= 2*Math.PI*radiuss;
   alert("Perimeter of Circle="+perimeter2);
 }
 </script>
